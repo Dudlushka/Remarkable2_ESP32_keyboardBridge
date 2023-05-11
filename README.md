@@ -17,6 +17,7 @@ KeyboardBridge=true
 ## What is Keyboardbridge
 
 KeyboardBridge listens on port 1, and you can send TCP messages, that the device interpret as keyboard key strokes
+(sometimes it freezes... if you dont disconnect, and the 2nd time your connection attempt will be refused... so make sure to disconnect)
 
 ```
 data[0] = 0;
@@ -83,7 +84,16 @@ example 1: Alt+0 2 7 1 2 (representing 0x2712) will draw a pen
 but here are some examples:
 [supported_chars.pdf](https://github.com/Dudlushka/Remarkable2_ESP32_keyboardBridge/files/11455525/supported_chars.pdf)
 
+### Some future things to do
+Any help is welcome
 
+* Keep alive messages needed (maybe)
+* AP mode
+* Special key combo to add current time as a string (via NTP)
+* keyboard LED control 
+* bulky Caps-lock / shift behaviour bugfix
+* Proper language arrays
+* Some special "language" arrays - for example drawing frames like: ╔══╦══╦══╦
 
 ### To-do:
 * its a very inital stuff. You have to add the SSID/password and the IP address of your rm2 to the main file
