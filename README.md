@@ -91,6 +91,7 @@ Any help is welcome
 * AP mode
 * Special key combo to add current time as a string (via NTP)
 * keyboard LED control 
+* USB composite device support ('cause wireless KBs are mostly composite devices with the mouse)
 * bulky Caps-lock / shift behaviour bugfix
 * Proper language arrays
 * Some special "language" arrays - for example drawing frames like: ╔══╦══╦══╦
